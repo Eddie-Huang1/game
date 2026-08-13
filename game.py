@@ -19,4 +19,6 @@ elif number == "2":
     if choice == "left":
         print("There is only one correct path, good for you, this isn't the correct one, you died to a trap")
     elif choice == "right":
-        print("")
+        print("You have came across a bridge with a river underneath")
+        print("Want to cross it?")
+        answer = input("yes or no: ")
