@@ -5,7 +5,7 @@ print("Welcome to spelling bee")
 print("--- Round 1 of 3 ---")
 print("Hint: A long yellow fruit")
 spelling = input("Your guess: ")
-if spelling == "banana":
+if spelling.lower() == "banana":
     print("Correct!")
     score += 1
     percentage += 33.33
@@ -16,7 +16,7 @@ else:
 print("--- Round 2 of 3 ---")
 print("Hint: A food that comes in a square box, has the shape of a circle and is cut in triangles")
 spelling = input("Your guess: ")
-if spelling == "pizza":
+if spelling.lower() == "pizza":
     print("Correct!")
     score += 1
     percentage += 33.33
@@ -27,7 +27,7 @@ else:
 print("--- Round 3 of 3 ---")
 print("Hint: Full name of DNA")
 spelling = input("Your guess: ")
-if spelling == "deoxyribonucleic acid":
+if spelling.lower() == "deoxyribonucleic acid":
     print("Correct!")
     score += 1
     percentage += 33.33
