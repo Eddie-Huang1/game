@@ -8,17 +8,17 @@ if number == "1":
     elif choice == "2":
         print("There is a straight path, do you want to walk through it?")
         answer = input("yes or no: ")
-        if answer == "yes":
+        if answer.lower() == "yes":
             print("You walked on and on hoping for an exit but you ended up dying from physical overextertion.")
-        elif answer == "no":
+        elif answer.lower() == "no":
             print("You are now stuck forever because the door trapped you in.")
 
 elif number == "2":
     print("You went straight")
     choice = input("left or right: ")
-    if choice == "left":
+    if choice.lower() == "left":
         print("There is only one correct path, good for you, this isn't the correct one, you died to a trap")
-    elif choice == "right":
+    elif choice.lower() == "right":
         print("You have came across a bridge with a river underneath")
         print("Want to cross it?")
         answer = input("yes or no: ")
