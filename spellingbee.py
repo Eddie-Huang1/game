@@ -1,3 +1,4 @@
+# Variables
 score = 0
 percentage = 0
 
@@ -5,11 +6,14 @@ print("Welcome to spelling bee")
 print("--- Round 1 of 4 ---")
 print("Hint: A long yellow fruit")
 spelling = input("Your guess: ")
+# Using .lower() to make sure that even if you use capital letters, the answer is still right
 if spelling.lower() == "banana":
     print("Correct!")
+    # Adding score and percentage if you get it right
     score += 1
     percentage += 25
 else:
+    # Telling them that they are wrong and showing them the answer
     spelling != "banana"
     print("Incorrect, the answer is banana")
 
@@ -47,4 +51,5 @@ else:
     print("Incorrect, the answer is hippopotomonstrosesquippedaliophobia")
 
 print("--- GAME OVER ---")
+# Adding up the final score and showing them the percentage that they got
 print(f"Your final score: {score} / 4 ({percentage}%)")
