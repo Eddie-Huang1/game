@@ -1,3 +1,9 @@
+import random
+# Word list that will be randomised
+randomwords = ["pizza", "banana", "deoxyribonucleic acid",
+             "hippopotomonstrosesquippedaliophobia",
+             "sky", "gravity", "clouds", "sword"]
+
 # Variables
 score = 0
 percentage = 0
@@ -6,7 +12,7 @@ print("Welcome to spelling bee")
 print("--- Round 1 of 4 ---")
 print("Hint: A long yellow fruit")
 spelling = input("Your guess: ")
-# Using .lower() to make sure that even if you use capital letters, the answer is still right
+# Using .lower() to make capital letters right
 if spelling.lower() == "banana":
     print("Correct!")
     # Adding score and percentage if you get it right
@@ -18,7 +24,7 @@ else:
     print("Incorrect, the answer is banana")
 
 print("--- Round 2 of 4 ---")
-print("Hint: A food that comes in a square box, has the shape of a circle and is cut in triangles")
+print("Hint: Food thats in square box, shape of a circle, cut in triangles")
 spelling = input("Your guess: ")
 if spelling.lower() == "pizza":
     print("Correct!")
