@@ -1,8 +1,13 @@
 import random
-# Word list that will be randomised
-randomwords = ["pizza", "banana", "deoxyribonucleic acid",
-             "hippopotomonstrosesquippedaliophobia",
-             "sky", "gravity", "clouds", "sword"]
+# Word dictionary that will be randomised
+randomwords = {"pizza": "Food thats in square box, shape of a circle, cut in triangles",
+             "banana": "A long yellow fruit",
+             "deoxyribonucleic acid": "Full name of DNA",
+             "hippopotomonstrosesquippedaliophobia": "Fear of long words",
+             "sky": "What you see when you look up",
+             "honey": "Something bees make",
+             "clouds": "White things in sky",
+             "sword": "Weapon used to slash"}
 
 # Variables
 score = 0
