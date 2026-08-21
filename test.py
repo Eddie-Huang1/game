@@ -3,7 +3,9 @@ score = 0
 percentage = 0
 
 print("Welcome to spelling bee")
-print("--- Round 1 of 4 ---")
+difficulty = input("Which difficulty would you like, Easy or Hard: ")
+if difficulty.lower() == "Easy":
+    print("--- Round 1 of 4 ---")
 print("Hint: A long yellow fruit")
 spelling = input("Your guess: ")
 # Using .lower() to make capital letters right
